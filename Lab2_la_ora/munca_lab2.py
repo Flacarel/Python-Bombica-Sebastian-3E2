@@ -125,6 +125,17 @@ propozitie = "A fost, de asemenea, Remarcabil pentru Razboaiele persane si Pentr
 
 print(numara_majuscule(propozitie))  
 
+#ex8
+def transform(x,alfabet):
+    rest=0
+    word=""
+    while(x):
+        rest=x%len(alfabet)
+        word=str(alfabet[rest])+word
+        x=x//len(alfabet)
+    return word
+print(transform(30,"AEGIJLNOPSUVbdefhimnoprstuvwxy"))
+
 #ex9
 def primul_ultimul_caracter(propozitie):
     rezultat = ""
